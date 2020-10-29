@@ -128,6 +128,7 @@ export class VideojsRecordComponent implements OnInit, OnDestroy {
       // can be downloaded by the user, stored on server etc.
       console.log('finished recording: ', this.player.recordedData);
       this.player.record().saveAs({'video': 'testVid_1.mp4'});
+      window.location.reload();
     });
 
     // error handling
